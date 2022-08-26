@@ -1,0 +1,17 @@
+.content_container {
+    animation-iteration-count: 1;
+    animation-timing-function: ease ;
+    animation-duration: 1s;
+    animation-name: transition;
+    
+  }
+  
+  @keyframes transition {
+    from {
+      left: 100%;
+    }
+
+    to {
+      left: 20%;
+    }
+  }
