@@ -20,7 +20,8 @@ const Display_module = ({ project }) => {
 
       <div className="img_container">
         <img src={project.img_path_1} alt="photo_1" />
-        <img src={'img/navigation/owl.png'} alt="photo_2" />
+        {/* <img src={'img/navigation/owl.png'} alt="photo_2" /> */}
+        <img src={'img/portfolio/park2_home.png'} alt="photo_3" />
         <img src={'img/portfolio/personal_website/portfolio.png'} alt="photo_3" />
         {/* <img src={project.img_path_2} alt="" /> */}
         {/* <img src={project.img_path_3} alt="" /> */}
