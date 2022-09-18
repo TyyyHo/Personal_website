@@ -7,7 +7,6 @@ const Display_module = ({ project }) => {
     custom_element();
   }, []);
 
-
   return (
     <div id="display_module">
       <custom-p class="display_title" content={project.title}></custom-p>
@@ -19,18 +18,20 @@ const Display_module = ({ project }) => {
       </div>
 
       <div className="img_container">
-        <img src={project.img_path_1} alt="photo_1" />
-        {/* <img src={'img/navigation/owl.png'} alt="photo_2" /> */}
-        <img src={'img/portfolio/park2_home.png'} alt="photo_3" />
-        <img src={'img/portfolio/personal_website/portfolio.png'} alt="photo_3" />
-        {/* <img src={project.img_path_2} alt="" /> */}
-        {/* <img src={project.img_path_3} alt="" /> */}
+        <img src={project.img_path_1} alt="" />
+        <img src={project.img_path_2} alt="" />
+        <img src={project.img_path_3} alt="" />
       </div>
 
       <div className="anchor_btn">
         <a href={project.url}>
           <div className="bg"></div>
           <div className="front">網站連結</div>
+        </a>
+
+        <a href={project.github}>
+          <div className="bg"></div>
+          <div className="front">Github</div>
         </a>
       </div>
     </div>

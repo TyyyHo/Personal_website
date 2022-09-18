@@ -21,11 +21,11 @@ const Navigation = ({ setPage, theme, setTheme }) => {
             if (theme === "dark_theme") {
               setTheme("light_theme");
               e.target.innerText = "mode_night";
-              console.log(e.target)
+              console.log(e.target);
             } else {
               setTheme("dark_theme");
               e.target.innerText = "wb_incandescent";
-              console.log(e.target)
+              console.log(e.target);
             }
           }}
         >
