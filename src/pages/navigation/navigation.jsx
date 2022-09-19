@@ -2,7 +2,7 @@ import "./navigation.scss";
 
 const Navigation = ({ setPage, theme, setTheme }) => {
   return (
-    <div id="navigation">
+    <div id="navigation" className="mask">
       {/* google icon */}
       <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons"

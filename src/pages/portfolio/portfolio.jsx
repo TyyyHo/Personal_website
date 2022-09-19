@@ -20,7 +20,7 @@ const Portfolio = () => {
     title: "個人網站",
     description:
       "以React架構來規劃一頁式個人網站。",
-    feature: "一頁式網站、React、一鍵切換網站配色" ,
+    feature: "一頁式網站、React、一鍵切換網站配色、網站導覽" ,
     img_path_1: "img/portfolio/personal_website/home.png",
     img_path_2: "img/portfolio/personal_website/about.png",
     img_path_3: "img/portfolio/personal_website/portfolio.png",
