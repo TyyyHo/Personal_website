@@ -31,7 +31,12 @@ const Navigation = ({ setPage, theme, setTheme }) => {
         >
           wb_incandescent
         </span>
+
+        <a href="https://github.com/TyyyHo">
+          <img id="github_icon" src={"./img/navigation/github.png"} alt="github_icon" />
+        </a>
       </div>
+
 
       <ul>
         <li id="home_btn" onClick={() => setPage("home")}>
