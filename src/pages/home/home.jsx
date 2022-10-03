@@ -1,9 +1,10 @@
 import "./home.scss";
+import React from 'react';
+import selfie from "../../../public//img/home/照片.png"
 
 const Home = () => {
   return (
     <div id="home" className="content_container">
-      {/* <h1 className="title">首頁</h1> */}
 
       <section id="main_content">
         <div id="text_container">
@@ -20,7 +21,7 @@ const Home = () => {
         </div>
 
         <div id="img_container">
-          <img src="img/home/照片.png" alt="" />
+          <img src={selfie} alt="selfie" />
         </div>
       </section>
     </div>

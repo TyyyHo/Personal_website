@@ -1,20 +1,17 @@
 import "./display_module.scss";
-import { custom_element } from "./custom_element";
-import { useEffect } from "react";
+import React from 'react';
 
 const Display_module = ({ project }) => {
-  useEffect(() => {
-    custom_element();
-  }, []);
-
+  
   return (
+
     <div id="display_module">
-      <custom-p class="display_title" content={project.title}></custom-p>
-      <custom-p class="description" content={project.description}></custom-p>
+      <div className="display_title">{project.title}</div>
+      <div className="description">{project.description}</div>
 
       <div className="feature">
         <p>網站功能</p>
-        <custom-p content={project.feature}></custom-p>
+        <div>{project.feature}</div>
       </div>
 
       <div className="img_container">

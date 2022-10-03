@@ -1,4 +1,5 @@
 import "./contact.scss";
+import React from 'react';
 import { useCopyToClipboard } from "./copy.ts";
 
 const Contact = () => {

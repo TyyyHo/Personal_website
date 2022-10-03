@@ -1,4 +1,7 @@
 import "./navigation.scss";
+import React from 'react';
+import logo from "../../../public/img/navigation/owl.png"
+import github from "../../../public/img/navigation/github.png"
 
 const Navigation = ({ setPage, theme, setTheme }) => {
   return (
@@ -10,7 +13,7 @@ const Navigation = ({ setPage, theme, setTheme }) => {
       />
 
       <div className="logo_container">
-        <img id="logo" src="img/navigation/owl.png" alt="Logo" />
+        <img id="logo" src={logo} alt="Logo" />
       </div>
 
       <div id="theme_btn_container">
@@ -33,7 +36,7 @@ const Navigation = ({ setPage, theme, setTheme }) => {
         </span>
 
         <a href="https://github.com/TyyyHo">
-          <img id="github_icon" src={"./img/navigation/github.png"} alt="github_icon" />
+          <img id="github_icon" src={github} alt="github_icon" />
         </a>
       </div>
 

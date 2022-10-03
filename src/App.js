@@ -1,14 +1,13 @@
-import { Navigation } from "./pages/navigation/navigation";
-import { AboutMe } from "./pages/aboutMe/aboutMe";
-import { Home } from "./pages/home/home";
-import { Portfolio } from "./pages/portfolio/portfolio";
-import { Contact } from "./pages/contact/contact";
-import { define_element } from "./components/project_display_model/define_element";
+import { Navigation } from "./pages/navigation/navigation.jsx";
+import { AboutMe } from "./pages/aboutMe/aboutMe.jsx";
+import { Home } from "./pages/home/home.jsx";
+import { Portfolio } from "./pages/portfolio/portfolio.jsx";
+import { Contact } from "./pages/contact/contact.jsx";
 import "./App.scss";
 import "./theme.scss";
 import "./animation.css";
 
-
+import React from 'react';
 import { useEffect, useState } from "react";
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
   const [theme, setTheme] = useState("dark_theme");
 
   useEffect(() => {
-    define_element();
+    // define_element();
   }, []);
 
   return (
