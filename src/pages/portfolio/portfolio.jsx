@@ -35,7 +35,7 @@ const Portfolio = () => {
     img_path_1: personalWebsite_1,
     img_path_2: personalWebsite_2,
     img_path_3: personalWebsite_3,
-    url: "https://tyyyho.github.io/Park2/",
+    url: "https://tyyyho.github.io/Personal_website/",
     github: "https://github.com/TyyyHo/Personal_website",
   };
 
