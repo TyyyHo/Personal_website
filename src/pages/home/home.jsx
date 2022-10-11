@@ -1,11 +1,12 @@
+import React from "react";
 import "./home.scss";
-import React from 'react';
-import selfie from "../../../public//img/home/照片.png"
+import "./home_mobile.scss";
+import selfie from "../../../public//img/home/照片.png";
 
 const Home = () => {
   return (
     <div id="home" className="content_container">
-
+      
       <section id="main_content">
         <div id="text_container">
           <div className="title">
@@ -15,15 +16,17 @@ const Home = () => {
 
           <div className="paragraph">
             <p>
-              從傳產轉職到資訊業的<span>前端工程師</span>，樂於探索與學習新事物，善於溝通與團隊合作。
+              從傳產轉職到資訊業的<span>前端工程師</span>
+              ，樂於探索與學習新事物，善於溝通與團隊合作。
             </p>
           </div>
         </div>
-
-        <div id="img_container">
-          <img src={selfie} alt="selfie" />
-        </div>
       </section>
+
+      <div id="img_container">
+        <img src={selfie} alt="selfie" />
+      </div>
+
     </div>
   );
 };

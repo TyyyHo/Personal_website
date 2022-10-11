@@ -6,31 +6,41 @@ $base_color_darkTheme: rgb(24, 31, 31);
 $secondary_color_darkTheme: rgb(34, 41, 41);
 // $secondary_color_darkTheme: rgb(57, 91, 100);
 $font_color_darkTheme: rgb(255, 255, 255);
-$border_darkTheme:rgb(165, 201, 202);
+$border_darkTheme: rgb(165, 201, 202);
 
 
 // light theme
 $base_color_lightTheme: rgb(255, 251, 251);
 $secondary_color_lightTheme: rgb(230, 224, 224);
 $font_color_lightTheme: rgb(12, 1, 1);
-$border_lightTheme:rgb(165, 201, 202);
+$border_lightTheme: rgb(165, 201, 202);
 
 
 // --------------------------------------
 
-
+// 深色模式
 .dark_theme {
     background-color: $base_color_darkTheme;
     color: $font_color_darkTheme;
+    // background-color: red;
 
     #navigation {
-        background-color: $secondary_color_darkTheme;
+        #navigation_btn {
+            border-color: $font_color_darkTheme;
+            background-color: $secondary_color_darkTheme;
+        }
 
-        #theme_btn {
-            background-color: black;
-            color: $font_color_darkTheme;
+        #navigation_container {
+            background-color: $secondary_color_darkTheme;
+
+            #theme_btn {
+                background-color: black;
+                color: $font_color_darkTheme;
+            }
         }
     }
+
+
 
     #aboutMe {
         .about_bg {
@@ -40,8 +50,10 @@ $border_lightTheme:rgb(165, 201, 202);
 
     #portfolio {
         background-color: $base_color_darkTheme;
+
         .scrollDown {
             border: 2px solid $font_color_darkTheme;
+            color: $font_color_darkTheme;
         }
 
         #display_module {
@@ -49,7 +61,8 @@ $border_lightTheme:rgb(165, 201, 202);
         }
     }
 
-    .title::before, .title::after {
+    .title::before,
+    .title::after {
         border-bottom: 3px solid $high_light;
     }
 
@@ -66,18 +79,28 @@ $border_lightTheme:rgb(165, 201, 202);
 }
 
 
+// 淺色模式
 .light_theme {
     background-color: $base_color_lightTheme;
     color: $font_color_lightTheme;
 
     #navigation {
-        background-color: $secondary_color_lightTheme;
+        #navigation_btn {
+            border-color: $font_color_lightTheme;
+            background-color: $secondary_color_lightTheme;
+        }
 
-        #theme_btn {
-            background-color: $base_color_lightTheme;
-            color: $font_color_lightTheme;
+        #navigation_container {
+            background-color: $secondary_color_lightTheme;
+
+            #theme_btn {
+                background-color: $base_color_lightTheme;
+                color: $font_color_lightTheme;
+            }
         }
     }
+
+
 
     #aboutMe {
         .about_bg {
@@ -87,8 +110,10 @@ $border_lightTheme:rgb(165, 201, 202);
 
     #portfolio {
         background-color: $base_color_lightTheme;
+
         .scrollDown {
             border: 2px solid $font_color_lightTheme;
+            color: $font_color_lightTheme;
         }
 
         #display_module {
@@ -96,7 +121,8 @@ $border_lightTheme:rgb(165, 201, 202);
         }
     }
 
-    .title::before, .title::after {
+    .title::before,
+    .title::after {
         border-bottom: 3px solid $high_light;
     }
 
@@ -111,5 +137,3 @@ $border_lightTheme:rgb(165, 201, 202);
     }
 
 }
-
-

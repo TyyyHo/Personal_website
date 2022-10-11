@@ -1,5 +1,6 @@
-import "./aboutMe.scss";
 import React from 'react';
+import "./aboutMe.scss";
+import "./aboutMe_mobile.scss";
 
 const AboutMe = () => {
   return (

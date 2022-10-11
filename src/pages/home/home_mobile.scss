@@ -1,0 +1,106 @@
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    #home {
+        display: block;
+        right: 7%;
+        top: 10%;
+        height: 80%;
+        width: 86%;
+        margin: 5% 0;
+
+        #main_content {
+            display: block;
+            padding: 0;
+
+            #text_container {
+
+                .title {
+
+                    h2 {
+                        font-size: 35px;
+                    }
+
+                    h3 {
+                        font-size: 28px;
+                    }
+                }
+
+                .paragraph {
+                    // border: 3px solid blue;
+                    width: 40%;
+                    height: 50%;
+                    font-size: 25px;
+
+                    span {
+                        border-bottom: 2px solid rgb(255, 231, 14);
+                    }
+                }
+            }
+        }
+
+        #img_container {
+            position: absolute;
+            right: 1%;
+            top: 30%;
+
+            img {
+                width: 20vh;
+            }
+        }
+
+    }
+
+}
+
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+
+    #home {
+        display: block;
+        height: 40%;
+        width: 86%;
+        margin: 5% 0;
+
+        #main_content {
+            display: block;
+
+            #text_container {
+
+                .title {
+
+                    h2 {
+                        font-size: 25px;
+                        letter-spacing: 0;
+                        line-height: 1vh;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        margin-block-end: 0em;
+                    }
+                }
+
+                .paragraph {
+                    width: 100%;
+                    font-size: 25px;
+
+                    span {
+                        border-bottom: 2px solid rgb(255, 231, 14);
+                    }
+                }
+            }
+        }
+
+        #img_container {
+            position: relative;
+            text-align: center;
+            margin-top: 5%;
+
+            img {
+                width: 20vh;
+            }
+        }
+
+    }
+}
