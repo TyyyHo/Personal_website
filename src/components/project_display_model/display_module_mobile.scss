@@ -1,0 +1,41 @@
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+
+    #display_module {
+
+
+        .img_container {
+
+            img {
+                height: 20%;
+            }
+        }
+
+        .anchor_btn {
+            margin-top: 1vh;
+        }
+
+    }
+
+}
+
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+
+    #display_module {
+
+        .display_title {
+            font-size: 28px;
+        }
+
+        .anchor_btn {
+
+            a {
+                margin: 1vh 2vh;
+            }
+        }
+    }
+
+
+}

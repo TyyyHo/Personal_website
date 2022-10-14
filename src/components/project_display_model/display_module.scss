@@ -3,18 +3,14 @@
     margin-bottom: 6vh;
     padding-bottom: 4vh;
 
-    custom-p {
-        display: block;
-    }
-
     .display_title {
         font-size: 32px;
         margin-bottom: 2.5vh;
     }
 
     .description {
-        letter-spacing: 0.5px;
         font-size: 18px;
+        letter-spacing: 0.5px;
     }
 
     .img_container {
@@ -23,7 +19,6 @@
         margin: 5vh 0;
 
         img {
-            // border: 3px solid rgb(165, 201, 202);
             border-radius: 10px;
             padding: 4px;
             height: 16vh;
@@ -69,6 +64,16 @@
                 border-radius: 30px;
             }
         }
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .img_container {
+    
+            img {
+                height: 12vh;
+            }
+        }
+    
     }
 
 

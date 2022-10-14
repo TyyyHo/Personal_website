@@ -1,0 +1,58 @@
+//RWD (width is higher than 412, lower than 1280)
+@media only screen and (max-width: 1250px) {
+    #contact {
+        position: relative;
+        margin: 5% auto;
+        display: block;
+        height: 90%;
+
+        .contact_container {
+            // border: 1px solid red;
+            flex-direction: column;
+            margin-top: 10%;
+
+            .contact_item {
+                text-align: center;
+                width: 50%;
+                border-radius: 30px;
+                padding: 3vh 2px;
+                cursor: pointer;
+
+                &:active {
+                    border: 3px solid rgb(255, 231, 14);
+                }
+
+                .material-icons {
+                    font-size: 4vh;
+                    color: rgb(255, 231, 14);
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
+//RWD (width is lower than 412)
+@media only screen and (max-width: 420px) {
+
+    #contact {
+
+
+        .contact_container {
+            // border: 1px solid red;
+            margin-top: 15%;
+
+            .contact_item {
+                width: 70%;
+                margin: 0 0 10px 0;
+
+            }
+        }
+    }
+
+}

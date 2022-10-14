@@ -8,15 +8,12 @@ import "./theme.scss";
 import "./animation.css";
 
 import React from 'react';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [page, setPage] = useState("home");
   const [theme, setTheme] = useState("dark_theme");
 
-  useEffect(() => {
-    // define_element();
-  }, []);
 
   return (
     <div id="app" className={ theme === "dark_theme" ? "dark_theme":"light_theme"}>

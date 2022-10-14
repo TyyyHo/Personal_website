@@ -1,10 +1,12 @@
 import "./navigation.scss";
 import "./navigation_mobile.scss";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../../public/img/navigation/owl.png";
 import github from "../../../public/img/navigation/github.png";
 
 const Navigation = ({ setPage, theme, setTheme }) => {
+  const [mobileNavi, setMobileNavi] = useState(false);
+
   return (
     <div id="navigation">
       {/* google icon */}
@@ -13,9 +15,20 @@ const Navigation = ({ setPage, theme, setTheme }) => {
         rel="stylesheet"
       />
 
-      <div id="navigation_btn" className="material-icons">menu</div>
+      <div
+        id="navigation_btn"
+        className="material-icons"
+        onClick={() => {
+          setMobileNavi(mobileNavi  ? false : true);
+        }}
+      >
+        menu
+      </div>
 
-      <div id="navigation_container">
+      <div
+        id="navigation_container"
+        className={mobileNavi ? "show" : "hide"}
+      >
         <div className="logo_container">
           <img id="logo" src={logo} alt="Logo" />
         </div>
@@ -45,19 +58,43 @@ const Navigation = ({ setPage, theme, setTheme }) => {
         </div>
 
         <ul id="navigation_option">
-          <li id="home_btn" onClick={() => setPage("home")}>
+          <li
+            id="home_btn"
+            onClick={() => {
+              setPage("home");
+              setMobileNavi(false);
+            }}
+          >
             <span className="material-icons">home</span>
             <p>首頁</p>
           </li>
-          <li id="aboutMe_btn" onClick={() => setPage("aboutMe")}>
+          <li
+            id="aboutMe_btn"
+            onClick={() => {
+              setPage("aboutMe");
+              setMobileNavi(false);
+            }}
+          >
             <span className="material-icons">account_circle</span>
             <p>關於我</p>
           </li>
-          <li id="portfolio_btn" onClick={() => setPage("portfolio")}>
+          <li
+            id="portfolio_btn"
+            onClick={() => {
+              setPage("portfolio");
+              setMobileNavi(false);
+            }}
+          >
             <span className="material-icons">integration_instructions</span>
             <p>專案作品</p>
           </li>
-          <li id="contact_btn" onClick={() => setPage("contact")}>
+          <li
+            id="contact_btn"
+            onClick={() => {
+              setPage("contact");
+              setMobileNavi(false);
+            }}
+          >
             <span className="material-icons">perm_phone_msg</span>
             <p>聯絡資訊</p>
           </li>
