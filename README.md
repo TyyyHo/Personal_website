@@ -3,6 +3,7 @@
 - React base
 - webpack打包
 - 一鍵切換網站配色
+- RWD
 
 
 ### `npm run dev`
