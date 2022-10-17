@@ -45,12 +45,6 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        loader: "image-webpack-loader",
-        options: {
-          bypassOnDebug: true,
-        },
-      },
-      {
         test: /\.html$/,
         use: [
           {
