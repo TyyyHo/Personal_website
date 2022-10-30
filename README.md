@@ -13,4 +13,4 @@ Runs the app in the development mode.
 
 ### `npm run prod`
 
-Bundlel with webpack.
+Bundle with webpack.
